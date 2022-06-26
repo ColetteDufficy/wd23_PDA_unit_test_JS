@@ -107,5 +107,7 @@ describe('Calculator', () => {
     const runningTotal = container.find('#running-total');
     expect(runningTotal.text()).toEqual('4');
   })
+
+  
 })
 

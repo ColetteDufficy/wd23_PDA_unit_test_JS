@@ -76,6 +76,15 @@ describe("Calculator", () => {
     cy.get('.display').should('contain', '555520')
   })
   
-
+  
+  
+  it('will return "error" when it tries to devide by zero', () => {
+    cy.get('#number6').click();
+    cy.get('#operator-divide').click();
+    cy.get('#number0').click();
+    cy.get('#operator-equals').click();
+    cy.get('.display').should('contain', 'ERROR')
+  })
+  
 
 })
